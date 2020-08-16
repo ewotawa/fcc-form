@@ -1,0 +1,169 @@
+/* body styling */
+/* background image: https://unsplash.com/photos/FH3nWjvia-U */
+
+.background-image {
+    background-image: url("https://images.unsplash.com/photo-1527224538127-2104bb71c51b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80");
+    background-attachment: fixed;
+    background-repeat: no repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+  }
+
+body {
+  color: white;
+}
+
+/* main styling */
+
+a {
+  text-decoration: none;
+  color: hsl(30, 100%, 50%);
+  text-shadow: 2px 2px 8px black;
+}
+
+main, header {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+.font-headline {
+  font-family: 'Special Elite', cursive;
+  font-size: 250%;
+}
+
+main {
+  background: rgba(115, 115, 115, 0.85);
+  font-family: 'Poppins', sans-serif;
+  font-size: 110%;
+  box-shadow: 
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+  border-radius: 25px;
+}
+
+footer {
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  padding: 20px;
+}
+
+#description {
+  text-align: center;
+}
+
+/* styling for survey input components */
+
+.input-group {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.wrapper-col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.wrapper-col-subgroup {
+  padding-top: 10px;
+}
+
+.wrapper-row {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align-items: center;
+}
+
+.wrapper-row label {
+  padding-left: 5px;
+}
+
+.input-box-style {
+  padding: 5px;
+  border-radius: 5px;
+  overflow: auto;
+  font-size: 110%;
+  width: 100%;
+  color: black;
+}
+
+.submit-box-style {
+  padding: 5px;
+  border-radius: 5px;
+  overflow: auto;
+  color: black;
+  font-size: 110%;
+}
+
+option {
+  flex-grow: 1;
+}
+
+textarea {
+  width: 100%;
+}
+
+/* footer styling */
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+  text-align: center;
+}
+
+footer p {
+  padding: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: hsl(45, 90%, 50%);
+}
+
+#my-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+#my-links li {
+  padding: 10px 0 10px 0;
+}
+
+input {
+  color: white;
+}
+
+/* media queries */
+
+@media screen and (min-width: 1200px) {
+  
+  main, header {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 20px
+  }
+  
+  .background-image {
+    background-image: url("https://images.unsplash.com/photo-1527224538127-2104bb71c51b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80");
+    background-attachment: fixed;
+    background-repeat: no repeat;
+    background-position: 50% 100%;
+  }
+  
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- freeCodeCamp test -- see CodePen -->
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" async></script> -->
+    
+    <!--font awesome icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Special+Elite&display=swap" rel="stylesheet">
+    
+    <!--Individual Stylesheet-->
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+  </head>
+  
+  <body class="background-image">
+    <header>
+      <h1 id="title" class="font-headline">Will Tom Eat It?</h1>
+    </header>
+    <main>
+          <section>
+            <p id="description">Help <a href="https://twitter.com/vonettalogan?lang=en" target="_blank">Vonetta Logan</a> find dishes for <a href="https://twitter.com/Tomunderwater" target="_blank">Tom Sosnoff</a> to try as part of her Friday segment <i>Will Tom Eat It?</i> on <a href="https://www.tastytrade.com/tt/" target="_blank">tastytrade</a>.</p>
+          </section>
+          <section>
+            <form id="survey-form">
+              <div class="input-group">
+                <label for="name" id="name-label">Your name: </label>
+                <input type="text" id="name" class="input-box-style" placeholder="J. Doe" required></input>
+              </div>
+
+            <div class="input-group">
+              <label for="email" id="email-label">Your e-mail address: </label>
+              <input type="email" id="email" class="input-box-style" placeholder="table@yourfavoriterestuarant.com" id="number-label" required></input>
+            </div>
+
+          <div class="input-group">
+            <label for="describe-food" required>Describe the food Tom should eat.</label>
+            <textarea id="describe-food" rows="5" class="input-box-style">What should Tom eat?</textarea>
+          </div>
+
+          <div class="input-group">
+            <label for="why-food">Why should Tom eat this food?</label>
+            <textarea id="why-food" rows="5" class="input-box-style">Tom should eat this food because ...</textarea>
+          </div>
+
+          <div class="input-group">
+            <label for="number" id="number-label">On a scale of 1 to 10, how likely is Tom to eat this food?</label>
+            <input type="number" id="number" placeholder="1" min="1", max="10" class="input-box-style" required></input>
+          </div>
+
+        <div class="input-group">
+          <label for="dropdown'">When should Tom eat this food?</label>
+          <select id="dropdown" class="input-box-style" >
+            <option value="breakfast" name="meal-time">Breakfast</option>
+            <option value="lunch" name="meal-time">Lunch</option>
+            <option value="afternoon-snack" name="meal-time">Afternoon Snack</option>
+            <option value="dinner" name="meal-time">Dinner</option>
+            <option value="late-night-snack" name="meal-time">Late-Night Snack</option>
+            <option value="any-time" name="meal-time">Any Time</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <p>Have you tried this food?</p>
+          <input type="radio" name="tried-it" id="triedY" value="Yes">
+          <label for="triedY">Yes</label>
+          <input type="radio" name="tried-it" id="triedN" value="No">
+          <label for="triedN">No</label>
+        </div>
+
+        <div class="input-group">
+          <p>Where can Tom get this food?</p>
+          <div class="wrapper-col">
+            <div class="wrapper-row">
+              <input type="checkbox" name="where-food" value="traderjoe" id="traderjoe">
+              <label for="traderjoe">Trader Joe's</lab>
+            </div>
+            <div class="wrapper-row">
+              <input type="checkbox" name="where-food" value="grocery" id="grocery">
+              <label for="grocery">A grocery store that isn't Trader Joe's</label>
+            </div>
+            <div class="wrapper-row">
+              <input type="checkbox" name="where-food" value="online" id="online">
+              <label for="online">Order online</label>
+            </div>
+            <div class="wrapper-row">
+              <input type="checkbox" name="where-food" value="restaurant" id="restaurant">
+              <label for="restaurant">Order at a restaurant</label>
+            </div>
+            <div class="wrapper-row">
+              <input type="checkbox" name="where-food" value="dropoff" id="dropoff">
+              <label for="dropoff"><a href="https://twitter.com/tony_battista" target="_blank">Tony</a> or Scott will have to drop it off at Tom's house.</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <p>Where can Vonetta learn more about this food?</p>
+          <div class="wrapper-col">
+            <div class="wrapper-col-subgroup">
+              <label for="link">Link: </label>
+              <input type="url" id="link" placeholder="https://example.com" class="input-box-style" required>
+            </div>
+            <div class="wrapper-col-subgroup">
+              <label for="link-type'">Link type:</label>
+              <select id="link-type" class="input-box-style" >
+                <option value="website" name="meal-time">Web site</option>
+                <option value="youtube" name="meal-time">YouTube</option>
+                <option value="twitter" name="meal-time">Twitter</option>
+                <option value="facebook" name="meal-time">Facebook</option>
+                <option value="instagram" name="meal-time">Instagram</option>
+                <option value="other" name="meal-time">Other</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <input type="submit" id="submit" class="submit-box-style" value="Submit your suggestion">
+        </div>
+
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>I built this page as part of my studies at <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form" target="_blank"><i class="fas fa-external-link-alt"></i> freeCodeCamp</a>. A <i class="fas fa-coffee"></i>-fueled project by</p>
+      <ul id="my-links">
+        <li><a href="https://twitter.com/PenguinPhoenixE" target="_blank"><i class="fab fa-twitter-square"></i> @PenguinPhoenixE</a></li>
+        <li><a href="https://www.elizabethwotawa.com" target="_blank"><i class="fas fa-external-link-alt"></i> www.elizabethwotawa.com</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
